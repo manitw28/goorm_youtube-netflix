@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Netflix Clone</title>
+</head>
+<body>
+
+    <!-- navigation bar -->
+
+    <div class="nav" id="nav">
+        <img src="assets/images/netflix-logo.png" alt="" class="nav__logo" />
+        <img src="assets/images/netflix-avatar.png" alt="" class="nav__avatar" />
+    </div>
+
+
+
+    <!-- header -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">종이의 집(Money Heist)</h1>
+            <div class="banner__buttons">
+                <button class="banner__button"><i class="fa fa-play"></i> 재생</button>
+                <button class="banner__button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg> 상세 정보</button>
+            </div>
+            <div class="banner__description">
+                1명의 천재, 8명의 공범, 철저히 준비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+
+    
+
+    <!-- Netflix 오리지날 시리즈 -->
+
+    <div class="row">
+        <h2>Netflix 오리지날 시리즈</h2>
+        <div class="row__posters">
+            <img src="assets/images/large-movie1.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie2.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie3.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie4.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie5.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie6.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie7.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie8.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie1.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie2.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie3.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie4.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie5.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie6.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie7.jpg" alt="" class="row__poster row___posterLarge" />
+            <img src="assets/images/large-movie8.jpg" alt="" class="row__poster row___posterLarge" />
+        </div>
+    </div>
+
+
+
+    <!-- Netflix 인기 동영상 -->
+
+    <div class="row">
+        <h2>Netflix 인기 동영상</h2>
+        <div class="row__posters">
+            <img src="assets/images/small-movie1.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie2.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie3.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie4.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie5.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie6.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie7.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie8.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie1.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie2.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie3.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie4.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie5.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie6.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie7.jpg" alt="" class="row__poster" />
+            <img src="assets/images/small-movie8.jpg" alt="" class="row__poster" />
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav__black');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
+
+<!-- 이미지 그라데이션
+김보민 님 정보
+background-image: linear-gradient(90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3) 30%, rgba(0, 0, 0, 0)), url(../images/visual4.jpg); -->
